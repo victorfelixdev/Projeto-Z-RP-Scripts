@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+  
+  #ammoDisplay {
+    position: absolute;
+    bottom: 2.5rem;
+    right: 0.5rem;
+    background-color: #1a1d21;
+    border: 1px solid #2a2d31;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 40px 10px rgba(16,16,18,1);
+    border-bottom: 1px dashed #ff004054;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  

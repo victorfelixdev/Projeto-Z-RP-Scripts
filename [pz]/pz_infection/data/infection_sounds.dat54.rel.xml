@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<Dat54>
+  <Version value="7314721"/>
+  <ContainerPaths>
+    <Item>audiodirectory\infection_sounds</Item>
+  </ContainerPaths>
+  <Items>
+    <Item type="SimpleSound">
+      <Name>scream_female_sp</Name>
+      <Header>
+        <Flags value="0x00008004"/>
+        <Volume value="200"/>
+        <Category>scripted</Category>
+      </Header>
+      <ContainerName>audiodirectory/infection_sounds</ContainerName>
+      <FileName>scream_female</FileName>
+      <WaveSlotNum value="0"/>
+    </Item>
+    <Item type="SimpleSound">
+      <Name>scream_male_sp</Name>
+      <Header>
+        <Flags value="0x00008004"/>
+        <Volume value="200"/>
+        <Category>scripted</Category>
+      </Header>
+      <ContainerName>audiodirectory/infection_sounds</ContainerName>
+      <FileName>scream_male</FileName>
+      <WaveSlotNum value="0"/>
+    </Item>
+    <Item type="SimpleSound">
+      <Name>tos_sp</Name>
+      <Header>
+        <Flags value="0x00008004"/>
+        <Volume value="200"/>
+        <Category>scripted</Category>
+      </Header>
+      <ContainerName>audiodirectory/infection_sounds</ContainerName>
+      <FileName>tos</FileName>
+      <WaveSlotNum value="0"/>
+    </Item>
+    <Item type="SimpleSound">
+      <Name>tosmujer_sp</Name>
+      <Header>
+        <Flags value="0x00008004"/>
+        <Volume value="200"/>
+        <Category>scripted</Category>
+      </Header>
+      <ContainerName>audiodirectory/infection_sounds</ContainerName>
+      <FileName>tosmujer</FileName>
+      <WaveSlotNum value="0"/>
+    </Item>
+    <Item type="SoundSet">
+      <Name>infection_soundset</Name>
+      <Header>
+        <Flags value="0xAAAAAAAA"/>
+      </Header>
+      <SoundSets>
+        <Item>
+          <ScriptName>scream_female</ScriptName>
+          <ChildSound>scream_female_sp</ChildSound>
+        </Item>
+        <Item>
+          <ScriptName>scream_male</ScriptName>
+          <ChildSound>scream_male_sp</ChildSound>
+        </Item>
+        <Item>
+          <ScriptName>tos</ScriptName>
+          <ChildSound>tos_sp</ChildSound>
+        </Item>
+        <Item>
+          <ScriptName>tosmujer</ScriptName>
+          <ChildSound>tosmujer_sp</ChildSound>
+        </Item>
+      </SoundSets>
+    </Item>
+  </Items>
+</Dat54>

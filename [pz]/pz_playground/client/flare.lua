@@ -1,0 +1,25 @@
+RegisterNetEvent('pz_playground:CL:FlareShoot', function()
+    RequestWeaponAsset(GetHashKey("weapon_flaregun"), 0, 0) 
+    while not HasWeaponAssetLoaded(GetHashKey("weapon_flaregun")) do
+        Wait(0)
+    end
+    RequestWeaponAsset(GetHashKey("weapon_flare"), 0, 0) 
+    while not HasWeaponAssetLoaded(GetHashKey("weapon_flare")) do
+        Wait(0)
+    end
+    local ped = cache.ped or PlayerPedId()
+    local pedCoords = GetEntityCoords(ped)
+    ShootSingleBulletBetweenCoordsIgnoreEntity(pedCoords.x,pedCoords.y,pedCoords.z+1.0, pedCoords.x+2,pedCoords.y+2 ,pedCoords.z + 50, 0, false, GetHashKey("weapon_flaregun"), 0, true, true, -1.0, ped)
+    Wait(200)
+    ShootSingleBulletBetweenCoordsIgnoreEntity(pedCoords.x,pedCoords.y,pedCoords.z+1.0, pedCoords.x-2,pedCoords.y-2 ,pedCoords.z + 40, 0, false, GetHashKey("weapon_flaregun"), 0, true, true, -1.0, ped)
+    Wait(200)
+    ShootSingleBulletBetweenCoordsIgnoreEntity(pedCoords.x,pedCoords.y,pedCoords.z+1.0, pedCoords.x+3,pedCoords.y+3 ,pedCoords.z + 50, 0, false, GetHashKey("weapon_flaregun"), 0, true, true, -1.0, ped)
+    Wait(200)
+    ShootSingleBulletBetweenCoordsIgnoreEntity(pedCoords.x,pedCoords.y,pedCoords.z+1.0, pedCoords.x-3,pedCoords.y-3 ,pedCoords.z + 40, 0, false, GetHashKey("weapon_flaregun"), 0, true, true, -1.0, ped)
+    Wait(200)
+    ShootSingleBulletBetweenCoordsIgnoreEntity(pedCoords.x,pedCoords.y,pedCoords.z+1.0, pedCoords.x+2,pedCoords.y+2 ,pedCoords.z + 50, 0, false, GetHashKey("weapon_flaregun"), 0, true, true, -1.0, ped)
+    Wait(200)
+    ShootSingleBulletBetweenCoordsIgnoreEntity(pedCoords.x,pedCoords.y,pedCoords.z+1.0, pedCoords.x-2,pedCoords.y-2 ,pedCoords.z + 40, 0, false, GetHashKey("weapon_flaregun"), 0, true, true, -1.0, ped)
+    Wait(2000)
+    ShootSingleBulletBetweenCoordsIgnoreEntity(pedCoords.x,pedCoords.y,pedCoords.z+1.0, pedCoords.x+1,pedCoords.y-1 ,pedCoords.z + 50, 0, false, GetHashKey("weapon_flare"), 0, true, true, -1.0, ped)
+end)

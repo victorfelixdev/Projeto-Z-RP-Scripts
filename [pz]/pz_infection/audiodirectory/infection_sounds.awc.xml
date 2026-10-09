@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<AudioWaveContainer>
+  <Version value="1"/>
+  <ChunkIndices value="True"/>
+  <Streams>
+    <Item>
+      <Name>scream_female</Name>
+      <FileName>scream_female_left.wav</FileName>
+      <Chunks>
+        <Item>
+          <Type>peak</Type>
+        </Item>
+        <Item>
+          <Type>data</Type>
+        </Item>
+        <Item>
+          <Type>format</Type>
+          <Codec>ADPCM</Codec>
+          <Samples value="202368"/>
+          <SampleRate value="32000"/>
+          <Headroom value="-100"/>
+          <PlayBegin value="0"/>
+          <PlayEnd value="0"/>
+          <LoopBegin value="0"/>
+          <LoopEnd value="0"/>
+          <LoopPoint value="-1"/>
+          <Peak unk="0"/>
+        </Item>
+      </Chunks>
+    </Item>
+    <Item>
+      <Name>scream_male</Name>
+      <FileName>scream_male_left.wav</FileName>
+      <Chunks>
+        <Item>
+          <Type>peak</Type>
+        </Item>
+        <Item>
+          <Type>data</Type>
+        </Item>
+        <Item>
+          <Type>format</Type>
+          <Codec>ADPCM</Codec>
+          <Samples value="202454"/>
+          <SampleRate value="32000"/>
+          <Headroom value="-100"/>
+          <PlayBegin value="0"/>
+          <PlayEnd value="0"/>
+          <LoopBegin value="0"/>
+          <LoopEnd value="0"/>
+          <LoopPoint value="-1"/>
+          <Peak unk="0"/>
+        </Item>
+      </Chunks>
+    </Item>
+    <Item>
+      <Name>tos</Name>
+      <FileName>tos_left.wav</FileName>
+      <Chunks>
+        <Item>
+          <Type>peak</Type>
+        </Item>
+        <Item>
+          <Type>data</Type>
+        </Item>
+        <Item>
+          <Type>format</Type>
+          <Codec>ADPCM</Codec>
+          <Samples value="109506"/>
+          <SampleRate value="32000"/>
+          <Headroom value="-100"/>
+          <PlayBegin value="0"/>
+          <PlayEnd value="0"/>
+          <LoopBegin value="0"/>
+          <LoopEnd value="0"/>
+          <LoopPoint value="-1"/>
+          <Peak unk="0"/>
+        </Item>
+      </Chunks>
+    </Item>
+    <Item>
+      <Name>tosmujer</Name>
+      <FileName>tosmujer_left.wav</FileName>
+      <Chunks>
+        <Item>
+          <Type>peak</Type>
+        </Item>
+        <Item>
+          <Type>data</Type>
+        </Item>
+        <Item>
+          <Type>format</Type>
+          <Codec>ADPCM</Codec>
+          <Samples value="109506"/>
+          <SampleRate value="32000"/>
+          <Headroom value="-100"/>
+          <PlayBegin value="0"/>
+          <PlayEnd value="0"/>
+          <LoopBegin value="0"/>
+          <LoopEnd value="0"/>
+          <LoopPoint value="-1"/>
+          <Peak unk="0"/>
+        </Item>
+      </Chunks>
+    </Item>
+  </Streams>
+</AudioWaveContainer>

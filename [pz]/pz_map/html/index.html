@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mapa Interativo</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <!-- Container principal oculto inicialmente -->
+  <div id="mainContainer" class="main-content">
+    <div class="map-container">
+      <img id="mapBackground" src="" alt="Mapa">
+      <canvas id="mapCanvas"></canvas>
+    </div>
+    <div class="toolbar">
+      <div class="item-index">
+        <label for="mapSelector">Tipo de Mapa:</label>
+        <select id="mapSelector" class="map-select"></select>
+      </div>
+      <div class="item-index">
+        <input type="text" id="waypointText" placeholder="Texto do Waypoint" class="item-index">
+        <button id="addWaypointBtn" class="button info" >Adicionar Waypoint</button>
+      </div>
+      <div class="item-index">
+        <label for="colorPicker">Cor:</label>
+        <input type="color" id="colorPicker" value="#ff0000">
+      </div>
+      <div class="item-index">
+        <label for="thicknessPicker">Espessura:</label>
+        <input type="range" id="thicknessPicker" min="1" max="10" value="3">
+      </div>
+      <div class="item-index">
+        <button id="saveBtn" class="button primary">Salvar</button>
+      </div>
+      <div class="item-index">
+        <button id="closeBtn" class="button secondary">Fechar</button>
+      </div>
+      
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

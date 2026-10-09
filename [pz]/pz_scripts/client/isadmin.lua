@@ -1,0 +1,1 @@
+TriggerServerEvent('pz_scripts:SV:isAdmin')

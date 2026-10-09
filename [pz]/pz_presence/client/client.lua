@@ -1,0 +1,15 @@
+local ID = GetPlayerServerId(PlayerId())
+CreateThread(function()
+  while true do
+    local i = math.random(#Config.texts)
+    SetDiscordAppId(Config.applicationId)
+    SetDiscordRichPresenceAsset(Config.iconLarge)
+    SetDiscordRichPresenceAssetText(Config.iconLargeHoverText)
+    SetDiscordRichPresenceAssetSmall(Config.iconSmall)
+    SetDiscordRichPresenceAssetSmallText(Config.iconSmallHoverText)
+    SetDiscordRichPresenceAction(0, '🌎 Connect 🌎', 'fivem://connect/play.projetozrp.com')
+    SetDiscordRichPresenceAction(1, '💭 Nosso Discord 💭', 'https://discord.gg/projetozrp')
+    SetRichPresence("ID: " .. ID .. " \n" .. Config.texts[i])
+    Wait(Config.updateRate)
+    end
+end)

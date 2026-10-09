@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infection UI</title>
+    <style>
+        .infection-container {
+            position: fixed;
+            bottom: 3%;  /* Moved to the bottom right corner */
+            right: 10%;   /* Moved to the bottom right corner */
+            width: 60%;  /* Reduced width by 25% */
+            max-width: 400px;
+            height: 37.5px; /* Reduced height by 25% */
+            background: #1a1d21;
+            border: 1px solid #2a2d31;
+            border-bottom: 1px dashed #ff004054;
+            border-radius: 6px;
+            overflow: hidden;
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+        }
+        .infection-icon-left, .infection-icon-right {
+            width: 30px;  /* Reduced width by 25% */
+            height: 30px; /* Reduced height by 25% */
+            background-size: cover;
+        }
+        .infection-icon-left {
+            background-image: url('path_to_left_icon.png'); /* Icon on the left side */
+        }
+        .infection-icon-right {
+            background-image: url('path_to_right_icon.png'); /* Icon on the right side */
+        }
+        .infection-bar-container {
+            flex-grow: 1;
+            height: 52.5%; /* Reduced bar height by 25% */
+            position: relative;
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+            background: #131518;
+            margin: 0 10px;
+            overflow: hidden;
+        }
+        .infection-bar {
+            height: 100%;
+            width: 0;
+            background: linear-gradient(to right, #fbff00 0%, #b91654 50%, #741818 100%);
+            transition: width 0.5s;
+            border-radius: 20px;
+        }
+        .infection-text {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            line-height: 26.25px; /* Adjusted to new height */
+            color: white;
+            font-family: Arial, sans-serif;
+            z-index: 1;
+        }
+        .infection-separator {
+            position: absolute;
+            height: 100%;
+            width: 2px;
+            background: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="infection-container" id="infectionContainer">
+        <div class="infection-icon-left"></div>
+        <div class="infection-bar-container">
+            <div class="infection-bar" id="infectionBar"></div>
+            <div class="infection-text" id="infectionText">0%</div>
+            <!-- Adding translucent stripes -->
+            <div class="infection-separator" style="left: 25%;"></div>
+            <div class="infection-separator" style="left: 50%;"></div>
+            <div class="infection-separator" style="left: 75%;"></div>
+        </div>
+        <div class="infection-icon-right"></div>
+    </div>
+    <script>
+        window.addEventListener('message', function(event) {
+            if (event.data.type === 'updateInfection') {
+                const infectionLevel = event.data.level;
+                const container = document.getElementById('infectionContainer');
+                const bar = document.getElementById('infectionBar');
+                const text = document.getElementById('infectionText');
+                
+                if (infectionLevel > 0) {
+                    container.style.display = 'flex';
+                    bar.style.width = infectionLevel + '%';
+                    text.innerText = infectionLevel + '%';
+                    setTimeout(function(){
+                        container.style.display = 'none'
+                    }, 8000)
+                } else {
+                    container.style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+RegisterNetEvent('pz_scripts:CL:PlaySound', function(soundName, soundSet)
+  PlaySoundFrontend(-1, soundName, soundSet, 1)
+end)
+RegisterNetEvent('pz_scripts:CL:PlayAlarm', function(soundName)
+  StartAlarm(soundName, true)
+end)
