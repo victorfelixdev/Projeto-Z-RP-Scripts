@@ -1,6 +1,6 @@
 # Projeto Z RP — Scripts
 
-Coleção de scripts e recursos usados no **Projeto Z RP**, servidor de FiveM com temática de sobrevivência em um cenário pós-apocalíptico. Este repositório reúne recursos desenvolvidos para o projeto e dependências de terceiros que faziam parte da base.
+Coleção de scripts e recursos usados no **Projeto Z RP**, servidor de FiveM com temática de sobrevivência em um cenário pós-apocalíptico. Este repositório reúne recursos desenvolvidos por mim (@victorfelixdev) para o projeto e dependências de terceiros que faziam parte da base.
 
 > Os recursos em `[pz]` são os scripts próprios do Projeto Z incluídos neste repositório. `[ox]` contém recursos do ecossistema Overextended e deve ser tratado como código de terceiros; consulte os respectivos arquivos `LICENSE` e `README.md` antes de reutilizar ou redistribuir.
 
